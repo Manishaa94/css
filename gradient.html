@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear-gradient{
+          
+            height: 200px;
+            width: 200px;
+           background-image: linear-gradient(90deg, red 10%, yellow 50%, green 90%);
+
+        }
+        .radial-gradient{
+            height: 200px;
+            width: 200px;
+            background-image:radial-gradient(circle at top right, red 40%,blue 20%  ,black  ) ;
+
+            
+        }
+        .conic-gradient{
+            
+            height: 200px;
+            width: 200px;
+            background-image:conic-gradient(from 180deg,red 10%,blue 20% ,black ) ;
+
+        }
+        
+.m{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    box-shadow: 10px 5px 10px red;}
+    
+    
+
+div{
+    display: inline-block;
+}
+#repeating-linear-gradient{
+    width: 200px;
+    height: 200px;
+    background-image: repeating-linear-gradient(50deg,red 25%,yellow 10%,blue);
+}
+#repeating-radial-gradient{
+    width: 200px;
+    height: 200px;
+    background-image: repeating-radial-gradient(cicle at top right, rgb(16, 156, 226) 25%,rgb(245, 245, 205) 10%,rgb(226, 22, 178));
+    
+}
+#repeating-conic-gradient{
+    width: 200px;
+    height: 200px;
+    background-image: repeating-conic-gradient(from 50deg,rgb(0, 255, 98) ,rgb(232, 182, 19) ,rgb(165, 165, 178));
+
+}
+p{
+    /* cursor: pointer; */
+    /* cursor:all-scroll; */
+    cursor:URL;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <div class="linear-gradient"></div>
+    <div class="radial-gradient"></div>
+    <div class="conic-gradient"></div>
+     <div id="repeating-linear-gradient"></div>
+    <div id="repeating-radial-gradient"></div>
+    <div id="repeating-conic-gradient"></div> 
+    <div class="m"></div>
+    <p>
+    <a href="https://www.youtube.com/"> link</a>
+    </p>
+ </div>
+</body>
+</html>

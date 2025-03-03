@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-color: blueviolet;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+header h2{
+    user-select: none;
+    font-size: 30px;
+    color: coral;
+}
+header nav{
+    display: flex;
+}
+header >nav >li{
+    list-style: none;
+    margin: 20px;
+    position: relative;
+    
+}
+header> nav >li >a{
+    text-decoration: none;
+    font-size: 1.2em; 
+    color: coral;
+}
+header >nav >li >a >i{
+    margin-right: 10px;
+    color: white;
+}
+header >nav> li:hover{
+    border-bottom: 2px solid white;
+    padding: 10px;
+    transition: all 1s;
+    
+}
+header >nav >li :hover .fa-arrow-down{
+
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+header nav >li>ul{
+    display: none;
+    position: absolute;
+    background-color: blueviolet;
+    width: 120px;
+    top: 30px;
+    /* text-align: center; */
+    
+}
+
+header nav>li>ul>li{
+    list-style: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+header nav>li:hover .m{
+    display: block;
+
+}
+header nav>li>ul>li>ol{
+
+    list-style-type: none;
+    position: absolute;
+    right: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    display: none;
+}
+header nav>li>ul>li .fa-arrow-left{
+   padding: 0 5px;
+   color: white;
+    /* transform: rotate(180deg);
+    transition: all 1s; 
+} */
+}
+
+header nav>li>ul>li>ol>li{
+    list-style: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+
+}
+header nav>li>ul>li:hover ol{
+  display: block;
+}
+header nav>li>ul>li:hover .fa-arrow-left{
+    transform: rotate(180deg);
+    transition: all 1s; 
+    
+}

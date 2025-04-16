@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+     *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #090a0a;
+        color: white;
+        padding: 20px 0;  
+     }
+      
+      header {
+        background-color: #090a0a;
+        padding: 20px;
+        text-align: center;
+      }
+      .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style:oblique;
+      }
+      .search-box input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .search-box button {
+        padding: 10px 20px;
+        background-color: #633713;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 900;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+      }
+      .card {
+        box-shadow: 0 4px 8px rgba(228, 9, 9, 0.2);
+      }
+      .add-to-card{
+        background-color: #28064e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 900;
+
+        width: 100%;
+      }
+      .a1 img{
+        width: 200px;
+        height: 200px;
+
+      }
+      .item1 { text-align: center; }.item2 {text-align: center;}
+      .item3{  text-align: center;}.item4{text-align: center;}
+      .item5{text-align: center;}.item6{text-align: center;}
+      .item7{text-align: center;}.item8{text-align: center;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="search-box">
+        <input type="text"id="input" placeholder="Search..." oninput="search()"   />
+        <button  onclick="search()">Search</button>
+      </div>
+    </header>
+    <main class="a1">
+      <div class="card">
+        <img src="jaav.jpg" alt="" />
+        <h2 class="item1">Java</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="jaav.jpg" alt="" />
+        <h2 class="item2">c</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="c++.jpg" alt="" />
+        <h2 class="item3">C++</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="ds.png" alt="" />
+        <h2 class="item4">ds</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="jaav.jpg" alt="" />
+        <h2 class="item5">Java</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="ds.png" alt="" />
+        <h2 class="item6">c</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="c++.jpg" alt="" />
+        <h2 class="item7">c++</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+      <div class="card">
+        <img src="jaav.jpg" alt="" />
+        <h2 class="item8">Java</h2>
+        <p>This is a card description.</p>
+        <button class="add-to-card">Add to card</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Your Company</p>
+    </footer>
+
+    <script>
+      function search()
+      {
+        let input = document.getElementById("input").value;
+        let items = document.querySelectorAll(".card");
+        items.forEach((item) => {
+          if (item.innerText.toLowerCase().includes(input.toLowerCase())) {
+            item.style.display = "";
+          }   
+          else {
+            item.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
